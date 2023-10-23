@@ -33,8 +33,12 @@ fs.readFile(filePath, "utf8", (err, data) => {
 
     // Create an array to store package data
     const packageData = [];
+
     // Determine the service name (package name) based on the first package
-    const serviceName = packageLockData.name.split("/")[1];
+    const serviceName = packageLockData.name.includes("/")
+      ? packageLockData.name.split("/").pop()
+      : packageLockData.name;
+
     // Iterate through the packages and extract package names and versions
     for (const packageName in packages) {
       if (packages.hasOwnProperty(packageName)) {
