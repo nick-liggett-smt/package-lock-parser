@@ -17,4 +17,7 @@
 
 ### What now?
 - If you're using this script, you have likely been asked to fill out an Excel spreadsheet that was provided by NGA leadership.
-- Now you can just open each `.csv` file, copy all the values
+- Now you can open each `.csv` file either through the command line using `open fileName.csv` or by double-clicking the file in your system's file manager.
+- A `Text Import` modal should appear, accept the default configuration by clicking `"OK"`.
+- You should now be seeing the contents of the selected `.csv` file.
+- From here you can copy the content of the `.csv` file and paste it directly into the Excel spreadsheet that was provided for this ticket.
